@@ -4,10 +4,22 @@
   
  <script
 src='//in.fw-cdn.com/30690231/372926.js'
-chat='true'>
+chat='false'>
 </script>
     
-    
+    var new_contact =
+{
+      "First name": "John", //Replace with first name of the user
+      "Last name": "Doe",  //Replace with last name of the user
+      "Email": "john.doe@example.com", //Replace with email of the user
+      "Alternate contact number": "98765432", //Replace with a custom field
+      "company": {
+          "Name": "Example.com", //Replace with company name
+          "Website": "www.example.com" //Replace with website of company
+      }
+};
+var identifier = "john.doe@example.com";
+fwcrm.identify(identifier, new_contact)
 <!-- basic -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
